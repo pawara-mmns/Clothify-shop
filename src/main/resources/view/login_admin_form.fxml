@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="625.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginform.LoginAdminFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="103.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Label layoutX="173.0" layoutY="20.0" text="Clothify Store" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="80.0" text="Fashion for Every Generation" textFill="#969191" />
+      <Label />
+      <Label layoutX="201.0" layoutY="113.0" text="Admin Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="149.0" layoutY="188.0" prefHeight="33.0" prefWidth="326.0" promptText="Enter Your Email" />
+      <TextField fx:id="txtPassword" layoutX="149.0" layoutY="245.0" prefHeight="33.0" prefWidth="326.0" promptText="Password" />
+      <Hyperlink layoutX="250.0" layoutY="296.0" onAction="#btnPasswordResetOnAction" prefHeight="28.0" prefWidth="124.0" text="Forget Password" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+      <Button layoutX="253.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnLoginAdminOnAction" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #00FF1E; -fx-background-radius: 10;" text="Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="35.0" layoutY="26.0" onDragDetected="#btnBackButtonOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/BackArrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

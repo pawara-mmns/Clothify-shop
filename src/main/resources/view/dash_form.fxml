@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="625.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardMain.DashBoardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="103.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <Label layoutX="173.0" layoutY="20.0" text="Clothify Store" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="80.0" text="Fashion for Every Generation" textFill="#969191" />
+      <JFXButton ellipsisString="" layoutX="139.0" layoutY="178.0" onAction="#btnLoginAdminOnAction" prefHeight="53.0" prefWidth="346.0" style="-fx-background-color: #00FF1E; -fx-background-radius: 18;" text="Login as a Admin">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton ellipsisString="" layoutX="139.0" layoutY="275.0" onAction="#btnLoginCashierOnAction" prefHeight="53.0" prefWidth="346.0" style="-fx-background-color: #FF7B00; -fx-background-radius: 18;" text="Login as a Cashier">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
