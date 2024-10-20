@@ -47,7 +47,7 @@
             <TableColumn fx:id="colID" prefWidth="60.7999906539917" text="id" />
             <TableColumn fx:id="colName" prefWidth="107.20000457763672" text="Name" />
             <TableColumn fx:id="colqty" prefWidth="67.199951171875" text="qty" />
-            <TableColumn fx:id="qtyPrice" prefWidth="113.5999755859375" text="Price" />
+            <TableColumn fx:id="colPrice" prefWidth="113.5999755859375" text="Price" />
          </columns>
       </TableView>
       <TextField fx:id="txtProductID" layoutX="493.0" layoutY="196.0" prefHeight="26.0" prefWidth="231.0" promptText="Product ID" />

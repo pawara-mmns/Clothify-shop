@@ -19,7 +19,7 @@ public class ManageProductFormController {
     private TableColumn<?, ?> colqty;
 
     @FXML
-    private TableColumn<?, ?> qtyPrice;
+    private TableColumn<?, ?> colPrice;
 
     @FXML
     private TableView<?> tblProduct;
