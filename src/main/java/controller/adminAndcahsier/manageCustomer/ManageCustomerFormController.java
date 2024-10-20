@@ -1,4 +1,4 @@
-package controller.manageSuppliers;
+package controller.adminAndcahsier.manageCustomer;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,7 +7,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class ManageSupplierFormController {
+public class ManageCustomerFormController  {
 
     @FXML
     private TableColumn<?, ?> colAddress;
@@ -22,7 +22,7 @@ public class ManageSupplierFormController {
     private TableColumn<?, ?> colPhoenNumber;
 
     @FXML
-    private TableView<?> tblSupplier;
+    private TableView<?> tblCustomer;
 
     @FXML
     private TextField txtAddress;
@@ -31,19 +31,19 @@ public class ManageSupplierFormController {
     private Label txtAdminName;
 
     @FXML
+    private TextField txtCustomerID;
+
+    @FXML
+    private TextField txtCustomerName;
+
+    @FXML
     private TextField txtPhoneNumber;
 
     @FXML
     private TextField txtSearch;
 
     @FXML
-    private TextField txtSupplierID;
-
-    @FXML
-    private TextField txtSupplierName;
-
-    @FXML
-    void btnAddSupplierOnAction(ActionEvent event) {
+    void btnAddCustomerOnAction(ActionEvent event) {
 
     }
 

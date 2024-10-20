@@ -1,4 +1,4 @@
-package controller.placeOrder;
+package controller.adminAndcahsier.placeOrder;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
