@@ -1,5 +1,5 @@
 package util;
 
-public enum DaoType {
+public enum ServiceType {
     CUSTOMER,EMPLOYEE,SUPPLIER,PRODUCT
 }
