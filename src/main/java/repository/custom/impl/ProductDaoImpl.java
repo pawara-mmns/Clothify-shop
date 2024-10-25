@@ -38,8 +38,8 @@ public class ProductDaoImpl implements ProductDao {
                 productObservableList.add(new Product(
                         resultSet.getString("pro_id"),
                         resultSet.getString("pro_name"),
-                        resultSet.getInt("phonenumber"),
-                        resultSet.getDouble("address")
+                        resultSet.getString("qty"),
+                        resultSet.getString("price")
                 ));
             }
             return productObservableList;
@@ -67,8 +67,8 @@ public class ProductDaoImpl implements ProductDao {
                 return new Product(
                         resultSet.getString(1),
                         resultSet.getString(2),
-                        resultSet.getInt(3),
-                        resultSet.getDouble(4)
+                        resultSet.getString(3),
+                        resultSet.getString(4)
                 );
             }
         } catch (SQLException e) {
@@ -79,7 +79,7 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public boolean update(Product product) {
-        String SQL = "UPDATE product SET pro_name = ?, phonenumber = ?, address = ? WHERE pro-id=?";
+        String SQL = "UPDATE product SET pro_name = ?, phonenumber = ?, address = ? WHERE pro_id=?";
         try {
             return CrudUtil.execute(SQL,
                     product.getPro_name(),
@@ -90,11 +90,12 @@ public class ProductDaoImpl implements ProductDao {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     @Override
     public String findLastId() {
-        String SQL = "SELECT MAX(id) FROM product";
+        String SQL = "SELECT MAX(pro_id) FROM product";
         try {
             ResultSet resultSet = CrudUtil.execute(SQL);
             if (resultSet.next()) {

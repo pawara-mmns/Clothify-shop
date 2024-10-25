@@ -37,7 +37,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
                 emplObservableList.add(new Employee(
                         resultSet.getString("emp_id"),
                         resultSet.getString("emp_name"),
-                        resultSet.getInt("phonenumber"),
+                        resultSet.getString("phonenumber"),
                         resultSet.getString("address")
                 ));
             }
@@ -66,7 +66,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
                 return new Employee(
                         resultSet.getString(1),
                         resultSet.getString(2),
-                        resultSet.getInt(3),
+                        resultSet.getString(3),
                         resultSet.getString(4)
                 );
             }
@@ -93,7 +93,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
     @Override
     public String findLastId() {
-        String SQL = "SELECT MAX(id) FROM employee";
+        String SQL = "SELECT MAX(emp_id) FROM employee";
         try {
             ResultSet resultSet = CrudUtil.execute(SQL);
             if (resultSet.next()) {

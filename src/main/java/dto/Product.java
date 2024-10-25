@@ -12,7 +12,7 @@ import lombok.ToString;
 public class Product {
     private String pro_id;
     private String pro_name;
-    private Integer qty;
-    private Double price;
+    private String qty;
+    private String price;
 
 }

@@ -9,10 +9,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Employee {
-    private String emp_id;
-    private String emp_name;
-    private String phonenumber;
-    private String address;
 
+
+public class UserEmployee {
+    private int id;
+    private String name;
+    private String email;
+    private String password;
 }

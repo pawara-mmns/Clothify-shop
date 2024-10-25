@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="508.0" prefWidth="634.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.dashboard.AdminDashBoardFormController">
+<AnchorPane prefHeight="454.0" prefWidth="634.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.dashboard.AdminDashBoardFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="71.0" stroke="BLACK" strokeType="INSIDE" width="633.0" />
       <Label fx:id="txtAdminName" layoutX="415.0" layoutY="22.0" text="Frank Demon" textFill="WHITE">
@@ -54,11 +54,6 @@
          </font>
       </Button>
       <Button layoutX="168.0" layoutY="376.0" mnemonicParsing="false" onAction="#btnManageEmployeeOnAction" prefHeight="18.0" prefWidth="298.0" style="-fx-background-color: #00FF1E; -fx-background-radius: 10;" text="Manage Employees">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="168.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnViewReportOnAction" prefHeight="18.0" prefWidth="298.0" style="-fx-background-color: #00FF1E; -fx-background-radius: 10;" text="View Report">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>

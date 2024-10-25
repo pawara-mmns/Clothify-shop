@@ -37,7 +37,7 @@ public class SupplierDaoImpl implements SupplierDao {
                     supplierObservableList.add(new Supplier(
                         resultSet.getString("sup_id"),
                         resultSet.getString("sup_name"),
-                        resultSet.getInt("phonenumber"),
+                        resultSet.getString("phonenumber"),
                         resultSet.getString("address")
                 ));
             }
@@ -66,7 +66,7 @@ public class SupplierDaoImpl implements SupplierDao {
                 return new Supplier(
                         resultSet.getString(1),
                         resultSet.getString(2),
-                        resultSet.getInt(3),
+                        resultSet.getString(3),
                         resultSet.getString(4)
                 );
             }
@@ -93,7 +93,7 @@ public class SupplierDaoImpl implements SupplierDao {
 
     @Override
     public String findLastId() {
-        String SQL = "SELECT MAX(id) FROM supplier";
+        String SQL = "SELECT MAX(sup_id) FROM supplier";
         try {
             ResultSet resultSet = CrudUtil.execute(SQL);
             if (resultSet.next()) {
