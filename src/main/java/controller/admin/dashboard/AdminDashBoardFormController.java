@@ -18,7 +18,7 @@ public class AdminDashBoardFormController {
     void btnManageCustomerOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/manage_customer_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin&cashier/manage_customer_form.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -29,7 +29,7 @@ public class AdminDashBoardFormController {
     void btnManageEmployeeOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/admin/manage_employee_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin/manage_employee_form.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -39,7 +39,7 @@ public class AdminDashBoardFormController {
     void btnManageProductOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/admin/manage_product_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin/manage_product_form.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -49,7 +49,7 @@ public class AdminDashBoardFormController {
     void btnManageSupplierOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/admin&cashier/manage_supplier_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin&cashier/manage_supplier_form.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -59,7 +59,7 @@ public class AdminDashBoardFormController {
     void btnPlaceOrderOnAction(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/admin&cashier/place_order_form.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin&cashier/place_order_form.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);

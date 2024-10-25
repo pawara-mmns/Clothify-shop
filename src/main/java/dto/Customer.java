@@ -13,7 +13,7 @@ import lombok.ToString;
 public class Customer {
     private String cus_id;
     private String cus_name;
-    private Integer phonenumber;
+    private String phonenumber;
     private String address;
 
 }
